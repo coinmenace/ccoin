@@ -1359,7 +1359,7 @@ bool AppInit2(boost::thread_group& threadGroup)
             } else
                 strErrors << _("Error loading wallet.dat") << "\n";
         }
-
+        printf("GetVersion %d",pwalletMain->GetVersion());
         if (GetBoolArg("-upgradewallet", fFirstRun)) {
             int nMaxVersion = GetArg("-upgradewallet", 0);
             if (nMaxVersion == 0) // the -upgradewallet without argument case
@@ -1369,8 +1369,10 @@ bool AppInit2(boost::thread_group& threadGroup)
                 pwalletMain->SetMinVersion(FEATURE_LATEST); // permanently upgrade the wallet immediately
             } else
                 LogPrintf("Allowing wallet upgrade up to %i\n", nMaxVersion);
-            if (nMaxVersion < pwalletMain->GetVersion())
+            if (nMaxVersion < pwalletMain->GetVersion()){
+
                 strErrors << _("Cannot downgrade wallet") << "\n";
+                }
             pwalletMain->SetMaxVersion(nMaxVersion);
         }
 
