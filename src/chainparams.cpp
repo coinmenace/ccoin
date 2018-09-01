@@ -97,10 +97,10 @@ public:
          * a large 4-byte int at any alignment.
          */
         pchMessageStart[0] = 0xca;
-        pchMessageStart[1] = 0xdb;
-        pchMessageStart[2] = 0xf7;
-        pchMessageStart[3] = 0x19;
-        vAlertPubKey = ParseHex("04d20b9320f2eb1808b01116dd5ada62edff469b609e894c15d5dc73e64f052887a800ba197a63c897ddc6729737dfc0db3ef7a138a47770ad96981d898141cf23");
+        pchMessageStart[1] = 0xfb;
+        pchMessageStart[2] = 0xc7;
+        pchMessageStart[3] = 0xb9;
+        vAlertPubKey = ParseHex("04baf13c6e32fad837647750c8de6a2a097b0d683c345fd0e43fe1f11da8dd530f6df0cdbe3406477bb9bf84bdc3c90c29d44ec51d3f9eb8ab42a96e2a51e40ab3");
         nDefaultPort = 4366;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // COFFEECOIN starting difficulty is 1 / 2^12  //20
         nSubsidyHalvingInterval = 210000;
@@ -124,12 +124,12 @@ public:
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue = 0 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("040cf8d9264dcec329e2108b58c174b6dd9da4e3af5263905548a6cbfabb6d7d79d6d55953bfce87bae7dede18cf0c4a8829733e9414edd38305ebaa74293b7d84") << OP_CHECKSIG;
+        txNew.vout[0].scriptPubKey = CScript() << ParseHex("0472d331be8b1028a38297e62298a618095d19529f17617ab39c63c39c8a1761838d422ec12e52b976a8668794b82127b6aff491b656b5798bf7d1c75d54fda4c8") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1535108400;
+        genesis.nTime = 1535814000;
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 4663919;
 
@@ -193,7 +193,7 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "04cd66b21f8273bf8c6ddd2b97fe5f830271637ceb82bc6269b010fef7090aa05657b78178f3605c11abd8567dbca949012e864a5132b355dcfa4d33346eaeee1f";
+        strSporkKey = "045bf6c9b2e4ef90ebe1fc3a4ac5749ee410dacbbe7e98c4f45f65f01b5af50c8d3b66c9178f8eaa346d0f58c1961fd6f37c77388d5a9f79f07209b2987effd3e4";
         strDarksendPoolDummyAddress = "GNEZjVTQHjff8BoWvUhGMSg9KZA7QNEwUm";
         nStartMasternodePayments = 1524781746; //11/10/2017 @ 12:00am (UTC)
     }
@@ -219,7 +219,7 @@ public:
         pchMessageStart[1] = 0x44;
         pchMessageStart[2] = 0xf5;
         pchMessageStart[3] = 0xe4;
-        vAlertPubKey = ParseHex("04e1d34432d3a5803312f33cf20686b1801835ea8efb18ad77d50b5ec1ce5ca73de65c36c082ca5c51880f8ffb5a296d8dc780f1dc02f22eba4dde1816a6a54b75");
+        vAlertPubKey = ParseHex("04e4164fd806bb712c2a2dde464be3b1e8edee7a4f4d08319b147d162c7f3ed6df346cc276047da90de44f24539f076c30c4f550d625e98874137ce1aeb1a728cd");
         nDefaultPort = 4367;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
@@ -232,7 +232,7 @@ public:
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
         nMaxMoneyOut = 88000000 * COIN;
 
-        genesis.nTime = 1535108600;
+        genesis.nTime = 1535814120;
         genesis.nNonce = 5202609;
 
         hashGenesisBlock = genesis.GetHash();
@@ -293,7 +293,7 @@ public:
         fTestnetToBeDeprecatedFieldRPC = true;
 
         nPoolMaxTransactions = 2;
-        strSporkKey = "049e53e687fdafd78fd42d730fad0e7ea1819396176a2cb85d7a76fa4559cdbd2c2f05330a6f5cbadb44a6c1d324f167e679e9f3e95d9d5649761a3e7f59bf4500";
+        strSporkKey = "044a139678fc890a247aa5fe560f83a35a6688d3723c541d9b686626b7efb55a14ed497d47dba14457159fc4386406a9006a95f9dfb5b46ae3fb11ede77696396f";
         strDarksendPoolDummyAddress = "";
         nStartMasternodePayments = 1562531573;
     }
@@ -327,7 +327,7 @@ public:
         nTargetTimespan = 24 * 60 * 60; // COFFEECOIN: 1 day
         nTargetSpacing = 1 * 60;        // COFFEECOIN: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 1535108900;
+        genesis.nTime = 1535814240;
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 4663919;
 		
