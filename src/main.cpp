@@ -1589,11 +1589,43 @@ double ConvertBitsToDouble(unsigned int nBits) {
 }
 
 int64_t GetBlockValue(int nHeight) {
-    if (nHeight == 0) return 132000000 * COIN;
+    if (nHeight == 0) return 13600000 * COIN;
 
-    int64_t nSubsidy;
+    int64_t nSubsidy = 40;
 
-        nSubsidy = 10 * COIN;
+    if(nHeight>=1 and nHeight<=199999){
+     nSubsidy = 40 * COIN;
+    }
+    if(nHeight>=200000 and nHeight<=399999){
+        nSubsidy = 44 * COIN;
+    }
+    if(nHeight>=400000 and nHeight<=599999){
+        nSubsidy = 48 * COIN;
+    }
+    if(nHeight>=600000 and nHeight<=799999){
+        nSubsidy = 56 * COIN;
+    }
+    if(nHeight>=800000 and nHeight<=999999){
+        nSubsidy = 60 * COIN;
+    }
+    //begin prooof of stake
+    if(nHeight>=1000000 and nHeight<=1199999){
+        nSubsidy = 60 * COIN;
+    }
+    if(nHeight>=1200000 and nHeight<=1399999){
+        nSubsidy = 56 * COIN;
+    }
+    if(nHeight>=1400000 and nHeight<=1599999){
+        nSubsidy = 48 * COIN;
+    }
+    if(nHeight>=1600000 and nHeight<=1799999){
+        nSubsidy = 44 * COIN;
+    }
+    if(nHeight>=1800000 and nHeight<=1999999){
+        nSubsidy = 40 * COIN;
+    }
+
+
 
     return nSubsidy;
 }

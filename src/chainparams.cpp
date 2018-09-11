@@ -129,12 +129,12 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1535814000;
+        genesis.nTime = 1535889600;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 4663919;
+        genesis.nNonce = 7717761;
 
         hashGenesisBlock = genesis.GetHash();
-        if(genesis.GetHash() != uint256S("0x"))
+        /**if(genesis.GetHash() != uint256S("0x"))
         {
             bool fNegative;
             bool fOverflow;
@@ -162,10 +162,10 @@ public:
             printf("Mainnet block.GetHash = %s\n", genesis.GetHash().GetHex().c_str());
             printf("Mainnet block.Merkleroot = %s\n", genesis.hashMerkleRoot.ToString().c_str());
         }
-        std::cout << std::string("Finished calculating Testnet Genesis Block:\n");
+        std::cout << std::string("Finished calculating Testnet Genesis Block:\n");*/
 
-        //assert(hashGenesisBlock == uint256("0x00000cc30945ca7b20bbeabbefd9bf6d682f1c9e797f32690f4974454ba5f7cb"));
-        //assert(genesis.hashMerkleRoot == uint256("0x01cfab24acf686cbf9794f98906162f0b5905e93d3d3ff0d9090b53e6973c05f"));
+        assert(hashGenesisBlock == uint256("0x00000a505cbe0c0de301f80191ea5213695bc31d6aa9583bef745c6e6b0a252a"));
+        assert(genesis.hashMerkleRoot == uint256("0x28f97cf4a7c3ffdd1d76f514d09b822c99eb5bd0e45ac37684eddba46c3bb6d6"));
 
         vSeeds.push_back(CDNSSeedData("seed1", "seed1.coffeecoin.store"));
         vSeeds.push_back(CDNSSeedData("seed2", "seed2.coffeecoin.store"));
@@ -232,11 +232,11 @@ public:
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
         nMaxMoneyOut = 88000000 * COIN;
 
-        genesis.nTime = 1535814120;
-        genesis.nNonce = 5202609;
+        genesis.nTime = 1535889800;
+        genesis.nNonce = 5555883;
 
         hashGenesisBlock = genesis.GetHash();
-        if(genesis.GetHash() != uint256S("0x"))
+        /**if(genesis.GetHash() != uint256S("0x"))
         {
             bool fNegative;
             bool fOverflow;
@@ -264,9 +264,9 @@ public:
             printf("Mainnet block.GetHash = %s\n", genesis.GetHash().GetHex().c_str());
             printf("Mainnet block.Merkleroot = %s\n", genesis.hashMerkleRoot.ToString().c_str());
         }
-        std::cout << std::string("Finished calculating Testnet Genesis Block:\n");/***/
+        std::cout << std::string("Finished calculating Testnet Genesis Block:\n");**/
 
-        //assert(hashGenesisBlock == uint256("0x00000647e92bd8283b2b9cfff8157692140c97addac0110cb744ad9afdb7a80b"));
+        assert(hashGenesisBlock == uint256("0x00000f868404a7397e88702b406f158f24052da923fe065914139416644372cc"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -327,13 +327,13 @@ public:
         nTargetTimespan = 24 * 60 * 60; // COFFEECOIN: 1 day
         nTargetSpacing = 1 * 60;        // COFFEECOIN: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 1535814240;
+        genesis.nTime = 1535889900;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 4663919;
+        genesis.nNonce = 5618763;
 		
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 4368;
-        if(genesis.GetHash() != uint256S("0x"))
+        /**if(genesis.GetHash() != uint256S("0x"))
         {
             bool fNegative;
             bool fOverflow;
@@ -362,9 +362,9 @@ public:
             printf("Mainnet block.Merkleroot = %s\n", genesis.hashMerkleRoot.ToString().c_str());
         }
         std::cout << std::string("Finished calculating Testnet Genesis Block:\n");
-        /***/
+        **/
 
-       //assert(hashGenesisBlock == uint256("0x00000cc30945ca7b20bbeabbefd9bf6d682f1c9e797f32690f4974454ba5f7cb"));
+        assert(hashGenesisBlock == uint256("0x00000db7af644d64f997f68ab1064ad8f703bb4906d4779683b8e0a713a082c3"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
