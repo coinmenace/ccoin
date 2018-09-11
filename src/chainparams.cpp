@@ -96,12 +96,12 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0xca;
-        pchMessageStart[1] = 0xfb;
+        pchMessageStart[0] = 0xda;
+        pchMessageStart[1] = 0x9b;
         pchMessageStart[2] = 0xc7;
         pchMessageStart[3] = 0xb9;
         vAlertPubKey = ParseHex("04baf13c6e32fad837647750c8de6a2a097b0d683c345fd0e43fe1f11da8dd530f6df0cdbe3406477bb9bf84bdc3c90c29d44ec51d3f9eb8ab42a96e2a51e40ab3");
-        nDefaultPort = 4366;
+        nDefaultPort = 5366;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // COFFEECOIN starting difficulty is 1 / 2^12  //20
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
@@ -129,9 +129,9 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1535889600;
+        genesis.nTime = 1536667200;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 7717761;
+        genesis.nNonce = 7752780;
 
         hashGenesisBlock = genesis.GetHash();
         /**if(genesis.GetHash() != uint256S("0x"))
@@ -162,9 +162,9 @@ public:
             printf("Mainnet block.GetHash = %s\n", genesis.GetHash().GetHex().c_str());
             printf("Mainnet block.Merkleroot = %s\n", genesis.hashMerkleRoot.ToString().c_str());
         }
-        std::cout << std::string("Finished calculating Testnet Genesis Block:\n");*/
+        std::cout << std::string("Finished calculating Testnet Genesis Block:\n");**/
 
-        assert(hashGenesisBlock == uint256("0x00000a505cbe0c0de301f80191ea5213695bc31d6aa9583bef745c6e6b0a252a"));
+        assert(hashGenesisBlock == uint256("0x0000064630197ded6652f1daf51645557ec19931e754682d04496686183191e5"));
         assert(genesis.hashMerkleRoot == uint256("0x28f97cf4a7c3ffdd1d76f514d09b822c99eb5bd0e45ac37684eddba46c3bb6d6"));
 
         vSeeds.push_back(CDNSSeedData("seed1", "seed1.coffeecoin.store"));
@@ -215,12 +215,12 @@ public:
     {
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
-        pchMessageStart[0] = 0xa3;
+        pchMessageStart[0] = 0xf3;
         pchMessageStart[1] = 0x44;
         pchMessageStart[2] = 0xf5;
         pchMessageStart[3] = 0xe4;
         vAlertPubKey = ParseHex("04e4164fd806bb712c2a2dde464be3b1e8edee7a4f4d08319b147d162c7f3ed6df346cc276047da90de44f24539f076c30c4f550d625e98874137ce1aeb1a728cd");
-        nDefaultPort = 4367;
+        nDefaultPort = 5367;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
@@ -232,8 +232,8 @@ public:
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
         nMaxMoneyOut = 88000000 * COIN;
 
-        genesis.nTime = 1535889800;
-        genesis.nNonce = 5555883;
+        genesis.nTime = 1536668200;
+        genesis.nNonce = 6811521;
 
         hashGenesisBlock = genesis.GetHash();
         /**if(genesis.GetHash() != uint256S("0x"))
@@ -265,8 +265,7 @@ public:
             printf("Mainnet block.Merkleroot = %s\n", genesis.hashMerkleRoot.ToString().c_str());
         }
         std::cout << std::string("Finished calculating Testnet Genesis Block:\n");**/
-
-        assert(hashGenesisBlock == uint256("0x00000f868404a7397e88702b406f158f24052da923fe065914139416644372cc"));
+        assert(hashGenesisBlock == uint256("0x0000002ba08ce9b98bfbb90637e5290743eb6c2909523d3b96a6441f48e4be8c"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -327,12 +326,12 @@ public:
         nTargetTimespan = 24 * 60 * 60; // COFFEECOIN: 1 day
         nTargetSpacing = 1 * 60;        // COFFEECOIN: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 1535889900;
+        genesis.nTime = 1536669200;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 5618763;
+        genesis.nNonce = 6642049;
 		
         hashGenesisBlock = genesis.GetHash();
-        nDefaultPort = 4368;
+        nDefaultPort = 5368;
         /**if(genesis.GetHash() != uint256S("0x"))
         {
             bool fNegative;
@@ -364,7 +363,7 @@ public:
         std::cout << std::string("Finished calculating Testnet Genesis Block:\n");
         **/
 
-        assert(hashGenesisBlock == uint256("0x00000db7af644d64f997f68ab1064ad8f703bb4906d4779683b8e0a713a082c3"));
+        assert(hashGenesisBlock == uint256("0x00000aeb77aeab55ddf5c71a854b0deee0600e786cc31b555bb42e120f3a0634"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
