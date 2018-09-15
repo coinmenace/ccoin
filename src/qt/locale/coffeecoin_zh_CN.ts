@@ -3615,8 +3615,8 @@ https://www.transifex.com/coffeecoin-crypto/coffeecoin-wallet-translations/</tra
         <translation>在白名单中的节点不会因为检测到DoS攻击而被停用. 来自这些节点的交易也一定会被转发, 即使说交易本神就来自记忆池. 适用于网关</translation>
     </message>
     <message>
-        <source>(40444 could be used only on mainnet)</source>
-        <translation>(40444 只能被用于主网)</translation>
+        <source>(5366 could be used only on mainnet)</source>
+        <translation>(5366 只能被用于主网)</translation>
     </message>
     <message>
         <source>(default: %s)</source>

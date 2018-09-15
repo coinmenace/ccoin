@@ -3757,8 +3757,8 @@ Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać
         <translation>Peery z białej listy nie mogą zostać zbanowane a ich transakcje są zawsze retransmitowane, nawet jeśli już są w pamięci zbiorowej (mempool). Jest to przydatne np. dla bramek wyjściowych</translation>
     </message>
     <message>
-        <source>(40444 could be used only on mainnet)</source>
-        <translation>(40444 może być użyte tylko dla głównej sieci)</translation>
+        <source>(5366 could be used only on mainnet)</source>
+        <translation>(5366 może być użyte tylko dla głównej sieci)</translation>
     </message>
     <message>
         <source>(default: %s)</source>

@@ -3758,8 +3758,8 @@ rpcpassword=%s
         <translation>Пиры, внесенные в белый список, не будут подвергаться DoS блокировкам и их транзакции будут ретранслироваться, даже если они уже есть в пуле памяти, что полезно, например, для работы в качестве шлюза</translation>
     </message>
     <message>
-        <source>(40444 could be used only on mainnet)</source>
-        <translation>(40444 можно использовать только в главной сети)</translation>
+        <source>(5366 could be used only on mainnet)</source>
+        <translation>(5366 можно использовать только в главной сети)</translation>
     </message>
     <message>
         <source>(default: %s)</source>

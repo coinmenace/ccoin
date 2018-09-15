@@ -3757,8 +3757,8 @@ napríklad: alertnotify=echo %%s | mail -s "COFFEECOIN Upozornenie" admin@foo.co
         <translation>Uzle na zoznam povolených nemôžu byť DoS zakázané a ich transakcie vždy postúpené ďalej, aj v prípade, ak sú už pamäťovej fronte. Užitočné napr. pre brány</translation>
     </message>
     <message>
-        <source>(40444 could be used only on mainnet)</source>
-        <translation>(40444 nemôže byť použité pre hlavnú sieť)</translation>
+        <source>(5366 could be used only on mainnet)</source>
+        <translation>(5366 nemôže byť použité pre hlavnú sieť)</translation>
     </message>
     <message>
         <source>(default: %s)</source>

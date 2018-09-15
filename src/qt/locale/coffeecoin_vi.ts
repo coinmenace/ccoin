@@ -3758,8 +3758,8 @@ ví dụ: alertnotify=echo %%s | mail -s "COFFEECOIN Alert" admin@foo.com
         <translation>Cái điểm ngang hàng trong danh sách trắng không thể bị cấm DoS và các giao dịch của nó luôn được chuyển tiếp, thậm chí cả khi nó đã có trong mempool, hữu ích ví dụ như cho một cửa ngõ</translation>
     </message>
     <message>
-        <source>(40444 could be used only on mainnet)</source>
-        <translation>(40444 chỉ được sử dụng trên mạng chính thức)</translation>
+        <source>(5366 could be used only on mainnet)</source>
+        <translation>(5366 chỉ được sử dụng trên mạng chính thức)</translation>
     </message>
     <message>
         <source>(default: %s)</source>

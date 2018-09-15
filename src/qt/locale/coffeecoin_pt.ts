@@ -3654,8 +3654,8 @@ https://www.transifex.com/coffeecoin-crypto/coffeecoin-wallet-translations/</tra
         <translation>Aviso: Por favor verifique que a data e a hora do computador está correcta! Se o relógio estiver errado o COFFEECOIN Core não vai funcionar correctamente.</translation>
     </message>
     <message>
-        <source>(40444 could be used only on mainnet)</source>
-        <translation>(40444 apenas pode ser usado para mainnet)</translation>
+        <source>(5366 could be used only on mainnet)</source>
+        <translation>(5366 apenas pode ser usado para mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>

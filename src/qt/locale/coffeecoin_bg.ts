@@ -3749,8 +3749,8 @@ for example: alertnotify=echo %%s | mail -s "COFFEECOIN Alert" admin@foo.com
         <translation>Whitelisted не могат да бъдат DoS забранени и техните транзакции ще бъдат винаги предадени, дори ако вече са в  mempool, полезно напр. за gateway</translation>
     </message>
     <message>
-        <source>(40444 could be used only on mainnet)</source>
-        <translation>(40444 може да бъде използван в основната мрежа)</translation>
+        <source>(5366 could be used only on mainnet)</source>
+        <translation>(5366 може да бъде използван в основната мрежа)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
